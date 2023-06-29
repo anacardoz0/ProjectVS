@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="box">
-        <form>
-            <h2>Login</h2>
-            <div class="inputBox" id="usuarioBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="usuario" class="labelInput">Usuário</label>
-            </div> <br>
+      <form>
+        <a href="../../index.html" id="voltar">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h3>Voltar</h3></a
+        >
+        <h2>Login</h2>
+        <div id="input">
+          <div class="inputBox">
+            <label for="name"
+              >Nome
+              <div class="inputField">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nome" name="nome" />
+              </div>
+            </label>
+          </div>
 
-            <div class="inputBox" id="senhaBox">
-                <input type="password" name="senha" id="senha" class="inputUser" required>
-                <label for="senha" class="labelInput">Senha</label>
-            </div> <br>
-            <input type="submit" name="submit" id="submit" value="Enviar" class="submit-button">
-        </form>
+          <div class="inputBox">
+            <label for="senha"
+              >Senha
+              <div class="inputField">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="senha" name="senha" />
+              </div>
+            </label>
+
+            <div id="esquecer">
+              <a href="../html/esquecer-senha.html">Esqueceu sua senha?</a>
+            </div>
+
+            <a href="#" id="back">
+              <button type="submit" id="loginButton">Entrar</button>
+            </a>
+          </div>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
